@@ -1,0 +1,132 @@
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Hover state for buttons */
+.btn:hover {
+  background-color: #222;
+  color: #fff;
+  border-color: #222;
+}
+
+/* Hero styles now apply only to .hero header */
+.hero {
+  position: relative;
+  background-image: url(./images/zen-garden-sand-and-rocks-wallpaper-5120x2160_16.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 100vh;
+  /* Fade out the image at the bottom */
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+          mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  z-index: 1;
+}
+
+.cover-text {
+  position: absolute;
+  top: 30%;
+}
+
+.hero h1,
+.hero p {
+  color: black;
+  padding-left: 100px;
+}
+
+/* Profile section */
+.profile-container {
+  padding: 50px;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #131313;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #131313;
+}
+
+@media (max-width: 576px) {
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+  .ps-4 {
+    padding-left: 1rem !important;
+  }
+  .about-me,
+  .profile-container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+
+.profile-container h1 {
+  font-size: x-large;
+}
+
+a {
+  color: gray;
+}
+
+/* Contact section */
+.contact-me {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 50px 20px;
+}
+
+.contact-me p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #c8bfaf;
+  color: #e0d9d9;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+/* Adjust layout on desktop: equal widths and extra horizontal space */
+@media (min-width: 992px) {
+  .contact-me .row {
+    --bs-gutter-x: 3rem;
+  }
+  .contact-me .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Increase the font size of lead paragraphs on very wide screens */
+  .contact-me p.lead,
+  .profile-container p.lead {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+}
