@@ -271,3 +271,105 @@ a {
     line-height: 1.6;
   }
 }
+
+
+/* Refined AlQaddi Digital Studio hero lockup */
+.brand-lockup {
+  padding-left: 100px;
+  width: fit-content;
+  max-width: 780px;
+}
+
+.brand-lockup h1 {
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(4.6rem, 9vw, 8.4rem) !important;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  margin: 0 0 1rem;
+  padding-left: 0 !important;
+  color: #171b1d;
+}
+
+.studio-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.studio-title {
+  font-family: "DM Sans", Arial, sans-serif;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.34em;
+  font-size: 0.82rem !important;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #171b1d !important;
+}
+
+.studio-rule {
+  display: block;
+  width: 44px;
+  height: 1px;
+  background: #7c746b;
+  opacity: 0.75;
+}
+
+.hero .studio-line {
+  max-width: 660px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-top: 1.6rem;
+}
+
+@media (min-width: 1200px) {
+  .hero .cover-text .brand-lockup {
+    padding-top: 0;
+    padding-left: 150px;
+  }
+
+  .hero .cover-text .brand-lockup h1 {
+    font-size: clamp(5.5rem, 8vw, 8.6rem) !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .brand-lockup {
+    padding-left: 0;
+  }
+
+  .studio-title-row {
+    gap: 0.7rem;
+  }
+
+  .studio-rule {
+    width: 28px;
+  }
+
+  .studio-title {
+    letter-spacing: 0.26em;
+    font-size: 0.72rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-lockup h1 {
+    font-size: clamp(3.7rem, 18vw, 5.3rem) !important;
+  }
+
+  .studio-title-row {
+    gap: 0.55rem;
+  }
+
+  .studio-rule {
+    width: 18px;
+  }
+
+  .studio-title {
+    letter-spacing: 0.21em;
+    font-size: 0.66rem !important;
+  }
+}

@@ -13,6 +13,10 @@
         crossorigin="anonymous">
 
   <!-- Custom styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 
   <!-- Inline override for profile image to enforce round shape and border -->
@@ -46,9 +50,15 @@
   <!-- HERO / COVER -->
   <header class="hero px-5 py-5">
     <div class="cover-text">
-      <h1>AlQaddi</h1>
-      <p class="lead">Digital Studio.</p>
-      <p class="studio-line">Branding, websites, apps, and digital experiences.</p>
+      <div class="brand-lockup" aria-label="AlQaddi Digital Studio">
+        <h1>AlQaddi</h1>
+        <div class="studio-title-row">
+          <span class="studio-rule" aria-hidden="true"></span>
+          <p class="studio-title">Digital Studio</p>
+          <span class="studio-rule" aria-hidden="true"></span>
+        </div>
+      </div>
+      <p class="studio-line">Brand identity, websites, apps, and digital experiences - designed and built as one connected system.</p>
       <p class="lead">
         <a href="#inquire" class="btn fill- btn-m fw-bold border-dark">Inquire Now</a>
       </p>
@@ -75,8 +85,7 @@
             <h1 class="display-5 fw-semibold text-body-emphasis lh-1 mb-3">About Me</h1>
             <p class="lead">
               Hello! I'm Merwa AlQaddi, the designer and developer behind AlQaddi Digital Studio.
-              I create digital experiences across branding, web development, app development, UX/UI,
-              and digital strategy - connecting the visual identity, the experience, and the technology behind it.
+              I create brand identities, websites, applications, and digital products with equal attention to strategy, experience, and execution.
               To view my resume click
               <a href="/Capstone Project 1/index.html" target="_blank" rel="noopener">here</a>.
             </p>
@@ -92,7 +101,7 @@
           <p class="studio-kicker mb-2">What I Do</p>
           <h2 class="fw-semibold mb-3">More than websites.</h2>
           <p class="lead mb-0">
-            Brand identity, websites, apps, UX/UI, and digital products built to work together.
+            From identity to interface, each piece is developed to feel intentional, cohesive, and built for the people using it.
           </p>
         </div>
 
@@ -100,28 +109,28 @@
           <div class="col-12 col-md-6 col-xl-3">
             <div class="studio-service h-100">
               <h3>Branding</h3>
-              <p>Visual identity, logos, brand direction, and cohesive digital presentation.</p>
+              <p>Distinct visual identities, logos, and brand systems designed for consistency across every touchpoint.</p>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-xl-3">
             <div class="studio-service h-100">
               <h3>Web</h3>
-              <p>Responsive websites built around clarity, usability, and real business goals.</p>
+              <p>Responsive websites that balance strong visual direction with usability, performance, and clear business purpose.</p>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-xl-3">
             <div class="studio-service h-100">
               <h3>Apps</h3>
-              <p>Mobile-first applications, interactive flows, and custom digital products.</p>
+              <p>Purpose-built applications and digital products shaped around intuitive flows and real-world use.</p>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-xl-3">
             <div class="studio-service h-100">
               <h3>UX & Strategy</h3>
-              <p>User experience, product structure, customer journeys, and connected systems.</p>
+              <p>UX architecture, product structure, customer journeys, and strategic decisions that keep the experience coherent.</p>
             </div>
           </div>
         </div>
@@ -133,13 +142,13 @@
       <div class="container">
         <div class="studio-heading mb-5">
           <p class="studio-kicker mb-2">Selected Work</p>
-          <h2 class="fw-semibold mb-3">A few projects built across brand, product, and experience.</h2>
+          <h2 class="fw-semibold mb-3">Selected work across identity, product, and digital experience.</h2>
         </div>
 
         <!-- Project 1 -->
         <article class="work-card row g-0 align-items-stretch mb-5">
           <div class="col-12 col-lg-6 work-media">
-            <img src="https://raw.githubusercontent.com/MemeerAlqaddi/My-Portfolio/main/assets/al-majlis-start.jpg"
+            <img src="./images/al-majlis-cover.jpg"
                  alt="Al Majlis application interface"
                  loading="lazy">
           </div>
