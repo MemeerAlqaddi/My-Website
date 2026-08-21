@@ -44,6 +44,13 @@ body {
   padding-left: 100px;
 }
 
+.studio-line {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-top: -0.5rem;
+  margin-bottom: 1.35rem;
+}
+
 /* Profile section */
 .profile-container {
   padding: 50px;
@@ -90,7 +97,119 @@ a {
   color: gray;
 }
 
-/* Contact section */
+/* Added studio sections */
+.studio-services,
+.selected-work {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.studio-heading {
+  max-width: 760px;
+}
+
+.studio-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #7b746c;
+}
+
+.studio-service {
+  padding: 1.4rem 0;
+  border-top: 1px solid #c8bfaf;
+}
+
+.studio-service h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.65rem;
+}
+
+.studio-service p {
+  color: #5a5652;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Selected work */
+.selected-work {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.work-card {
+  border: 1px solid #d6d0c7;
+  background: #eeeae4;
+  overflow: hidden;
+}
+
+.work-media {
+  min-height: 360px;
+  background: #d9d2c8;
+  overflow: hidden;
+}
+
+.work-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  display: block;
+  object-fit: cover;
+}
+
+.work-copy {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-type {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7f776e;
+  margin-bottom: 0.9rem;
+}
+
+.work-copy h3 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.work-copy > p:not(.work-type) {
+  color: #4e4945;
+  line-height: 1.7;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.9rem 0 1.5rem;
+}
+
+.work-tags span {
+  border: 1px solid #bdb4aa;
+  border-radius: 999px;
+  padding: 0.38rem 0.72rem;
+  font-size: 0.76rem;
+  color: #514c47;
+}
+
+.work-link {
+  width: fit-content;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.1rem;
+}
+
+/* Contact section - original styling preserved */
 .contact-me {
   background-color: #f8f9fa;
   color: #333;
@@ -109,6 +228,28 @@ a {
   text-align: center;
   padding: 20px 10px;
   font-size: 0.9rem;
+}
+
+/* Added responsive handling for new sections only */
+@media (max-width: 991.98px) {
+  .work-copy {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .studio-line {
+    font-size: 0.95rem;
+  }
+
+  .selected-work {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+
+  .work-copy {
+    padding: 1.5rem;
+  }
 }
 
 /* Adjust layout on desktop: equal widths and extra horizontal space */

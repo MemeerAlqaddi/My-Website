@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alqaddi Web Solutions</title>
+  <title>AlQaddi Digital Studio</title>
+  <meta name="description" content="AlQaddi Digital Studio creates branding, websites, apps, and digital experiences.">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
@@ -27,25 +28,27 @@
     /* Make the hero text larger and position it further down/right on wide screens */
     @media (min-width: 1200px) {
       .hero .cover-text {
-        padding-top: 100px;   /* Push down by 100px */
-        padding-left: 50px;  /* Push right by 100px */
+        padding-top: 100px;
+        padding-left: 50px;
       }
       .hero .cover-text h1 {
-        font-size: 4rem;      /* Larger title font */
+        font-size: 4rem;
       }
       .hero .cover-text p.lead {
-        font-size: 2rem;      /* Larger subtitle font */
+        font-size: 2rem;
       }
     }
   </style>
 </head>
+
 <body class="d-flex flex-column min-vh-100 text-bg-light">
 
   <!-- HERO / COVER -->
   <header class="hero px-5 py-5">
     <div class="cover-text">
       <h1>AlQaddi</h1>
-      <p class="lead">Web Development Made Simple.</p>
+      <p class="lead">Digital Studio.</p>
+      <p class="studio-line">Branding, websites, apps, and digital experiences.</p>
       <p class="lead">
         <a href="#inquire" class="btn fill- btn-m fw-bold border-dark">Inquire Now</a>
       </p>
@@ -66,13 +69,15 @@
                  alt="Portrait of Merwa AlQaddi"
                  loading="lazy">
           </div>
-          <!-- About text, centered on small screens and left-aligned on large screens -->
+
+          <!-- About text -->
           <div class="col-12 col-lg-6 text-center text-lg-start">
             <h1 class="display-5 fw-semibold text-body-emphasis lh-1 mb-3">About Me</h1>
             <p class="lead">
-              Hello! I'm Merwa AlQaddi, a passionate Full Stack Web Developer with a knack for creating dynamic and responsive web applications.
-              With a strong foundation in both front-end and back-end technologies, I thrive on turning ideas into reality through code. Whether it's building
-              sleek user interfaces or designing robust server-side logic, I enjoy every aspect of the development process. To view my resume click
+              Hello! I'm Merwa AlQaddi, the designer and developer behind AlQaddi Digital Studio.
+              I create digital experiences across branding, web development, app development, UX/UI,
+              and digital strategy - connecting the visual identity, the experience, and the technology behind it.
+              To view my resume click
               <a href="/Capstone Project 1/index.html" target="_blank" rel="noopener">here</a>.
             </p>
           </div>
@@ -80,7 +85,141 @@
       </div>
     </section>
 
-    <!-- CONTACT ME SECTION -->
+    <!-- SERVICES / CAPABILITIES -->
+    <section class="studio-services py-5">
+      <div class="container">
+        <div class="studio-heading mb-4">
+          <p class="studio-kicker mb-2">What I Do</p>
+          <h2 class="fw-semibold mb-3">More than websites.</h2>
+          <p class="lead mb-0">
+            Brand identity, websites, apps, UX/UI, and digital products built to work together.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="studio-service h-100">
+              <h3>Branding</h3>
+              <p>Visual identity, logos, brand direction, and cohesive digital presentation.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="studio-service h-100">
+              <h3>Web</h3>
+              <p>Responsive websites built around clarity, usability, and real business goals.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="studio-service h-100">
+              <h3>Apps</h3>
+              <p>Mobile-first applications, interactive flows, and custom digital products.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="studio-service h-100">
+              <h3>UX & Strategy</h3>
+              <p>User experience, product structure, customer journeys, and connected systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="selected-work py-5">
+      <div class="container">
+        <div class="studio-heading mb-5">
+          <p class="studio-kicker mb-2">Selected Work</p>
+          <h2 class="fw-semibold mb-3">A few projects built across brand, product, and experience.</h2>
+        </div>
+
+        <!-- Project 1 -->
+        <article class="work-card row g-0 align-items-stretch mb-5">
+          <div class="col-12 col-lg-6 work-media">
+            <img src="https://raw.githubusercontent.com/MemeerAlqaddi/My-Portfolio/main/assets/al-majlis-start.jpg"
+                 alt="Al Majlis application interface"
+                 loading="lazy">
+          </div>
+          <div class="col-12 col-lg-6 work-copy">
+            <p class="work-type">Mobile App · Digital Product</p>
+            <h3>Al Majlis</h3>
+            <p>
+              A mobile-first Islamic party game designed for real group play. I developed the product concept,
+              UX/UI, game flows, multilingual experience, scoring, timers, and responsive behavior into one cohesive app.
+            </p>
+            <div class="work-tags">
+              <span>App Development</span>
+              <span>UX/UI</span>
+              <span>Product Strategy</span>
+              <span>PWA</span>
+            </div>
+            <a class="work-link"
+               href="https://memeeralqaddi.github.io/AlMajlis/"
+               target="_blank"
+               rel="noopener noreferrer">View project ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="work-card row g-0 align-items-stretch mb-5">
+          <div class="col-12 col-lg-6 work-media">
+            <img src="https://raw.githubusercontent.com/MemeerAlqaddi/My-Portfolio/main/assets/hariri-homepage.png"
+                 alt="Al Hariri Detailing website"
+                 loading="lazy">
+          </div>
+          <div class="col-12 col-lg-6 work-copy">
+            <p class="work-type">Brand Identity · Service Website</p>
+            <h3>Al Hariri Detailing</h3>
+            <p>
+              A complete identity and digital presence for an automotive detailing business, including visual direction,
+              service structure, website design and development, booking experience, and launch assets.
+            </p>
+            <div class="work-tags">
+              <span>Branding</span>
+              <span>Web Development</span>
+              <span>Customer Journey</span>
+              <span>Launch Strategy</span>
+            </div>
+            <a class="work-link"
+               href="https://hariridetailing.com/"
+               target="_blank"
+               rel="noopener noreferrer">Visit website ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="work-card row g-0 align-items-stretch">
+          <div class="col-12 col-lg-6 work-media">
+            <img src="https://raw.githubusercontent.com/MemeerAlqaddi/My-Portfolio/main/assets/elevate-brand-board.png"
+                 alt="ELEVATE brand and website presentation"
+                 loading="lazy">
+          </div>
+          <div class="col-12 col-lg-6 work-copy">
+            <p class="work-type">Brand Ecosystem · Multi-Page Website</p>
+            <h3>ELEVATE</h3>
+            <p>
+              A full brand and digital ecosystem for a personal training and nutrition business, including brand identity,
+              responsive web design, program structure, inquiry experience, integrations, collateral, and merchandise.
+            </p>
+            <div class="work-tags">
+              <span>Brand Strategy</span>
+              <span>UX/UI</span>
+              <span>Web Development</span>
+              <span>Digital Experience</span>
+            </div>
+            <a class="work-link"
+               href="https://raw.githubusercontent.com/MemeerAlqaddi/My-Portfolio/main/assets/elevate-brand-board.png"
+               target="_blank"
+               rel="noopener noreferrer">View project ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT ME SECTION - original markup preserved -->
     <section id="inquire" class="contact-me py-5">
       <div class="container">
         <div class="row align-items-center g-5 gx-5">
@@ -109,7 +248,7 @@
             </form>
           </div>
 
-          <!-- Right: Text (now left-aligned) -->
+          <!-- Right: Text -->
           <div class="col-12 col-lg-6 col-xl-7 d-flex flex-column justify-content-center">
             <p class="lead m-5 my-1 text-start">
               Every great project starts with a conversation.<br>
@@ -126,7 +265,7 @@
   <footer class="footer mt-auto text-center py-5">
     <div class="footer-container">
       <div class="d-flex flex-wrap align-items-center justify-content-center py-3 my-4 border-top">
-        <p class="mb-0 text-body-secondary">&copy; 2024 Alqaddi Web Solutions</p>
+        <p class="mb-0 text-body-secondary">&copy; 2026 AlQaddi Digital Studio</p>
       </div>
     </div>
   </footer>
