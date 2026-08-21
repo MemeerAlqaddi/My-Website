@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=20260820-13">
+  <link rel="stylesheet" href="style.css?v=20260820-14">
 
   <!-- Inline override for profile image to enforce round shape and border -->
   <style>
@@ -235,23 +235,26 @@
         <div class="row align-items-center g-5 gx-5">
           <!-- Left: Contact Form -->
           <div class="col-12 col-lg-6 col-xl-5">
-            <form class="p-4 border rounded-3 bg-light shadow-sm">
+            <form class="p-4 border rounded-3 bg-light shadow-sm" action="https://formsubmit.co/m.alqaddi@outlook.com" method="POST">
               <h5 class="fw-semibold">Start a Conversation</h5>
+              <input type="hidden" name="_subject" value="New AlQaddi Digital Studio Inquiry">
+              <input type="hidden" name="_template" value="table">
+              <input type="text" name="_honey" style="display:none">
               <p class="text-muted small mb-4">Whether you’re starting from scratch or looking to improve an existing business, we do it all. Together, we’ll find the right solution for you and turn your vision into a digital reality.</p>
 
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Your Name">
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
               </div>
 
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" id="email" class="form-control" placeholder="you@example.com">
+                <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
               </div>
 
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea id="message" rows="4" class="form-control" placeholder="Tell me what you’re working on..."></textarea>
+                <textarea id="message" name="message" rows="4" class="form-control" placeholder="Tell me what you’re working on..." required></textarea>
               </div>
 
               <button type="submit" class="btn btn-dark w-100">Send Inquiry</button>
