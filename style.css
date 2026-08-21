@@ -275,17 +275,17 @@ a {
 
 /* Refined AlQaddi Digital Studio hero lockup */
 .brand-lockup {
-  padding-left: 100px;
   width: fit-content;
   max-width: 780px;
+  padding-left: 100px;
 }
 
 .brand-lockup h1 {
   font-family: "Libre Caslon Display", Georgia, serif;
   font-weight: 400;
-  font-size: clamp(4.6rem, 9vw, 8.4rem) !important;
-  line-height: 0.92;
-  letter-spacing: -0.045em;
+  font-size: clamp(5.2rem, 8vw, 8.8rem) !important;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
   margin: 0 0 1rem;
   padding-left: 0 !important;
   color: #171b1d;
@@ -294,8 +294,8 @@ a {
 .studio-title-row {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  width: 100%;
+  gap: 0.9rem;
+  width: fit-content;
 }
 
 .studio-title {
@@ -303,8 +303,8 @@ a {
   margin: 0 !important;
   padding-left: 0 !important;
   text-transform: uppercase;
-  letter-spacing: 0.34em;
-  font-size: 0.82rem !important;
+  letter-spacing: 0.32em;
+  font-size: 0.78rem !important;
   font-weight: 600;
   white-space: nowrap;
   color: #171b1d !important;
@@ -312,37 +312,97 @@ a {
 
 .studio-rule {
   display: block;
-  width: 44px;
+  width: 42px;
   height: 1px;
-  background: #7c746b;
-  opacity: 0.75;
+  background: rgba(49, 48, 46, 0.7);
 }
 
 .hero .studio-line {
-  max-width: 660px;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  margin-top: 1.6rem;
+  max-width: 540px;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  font-weight: 500;
+  margin: 1.45rem 0 1.35rem;
+}
+
+/* Stone-filled hero CTA */
+.hero .hero-inquire {
+  background: rgba(116, 112, 106, 0.9);
+  border: 1px solid rgba(86, 82, 77, 0.85) !important;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(45, 42, 39, 0.14);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero .hero-inquire:hover,
+.hero .hero-inquire:focus {
+  background: rgba(92, 88, 83, 0.96);
+  color: #fff;
+  border-color: rgba(74, 70, 66, 0.95) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(45, 42, 39, 0.2);
+}
+
+/* Keep the whole hero message on one visual axis */
+.hero .cover-text {
+  max-width: 760px;
+}
+
+.hero .cover-text > .studio-line,
+.hero .cover-text > p.lead {
+  margin-left: 100px;
+  padding-left: 0;
 }
 
 @media (min-width: 1200px) {
+  .hero .cover-text {
+    padding-top: 90px;
+    padding-left: 50px;
+  }
+
   .hero .cover-text .brand-lockup {
-    padding-top: 0;
-    padding-left: 150px;
+    padding-left: 100px;
   }
 
   .hero .cover-text .brand-lockup h1 {
-    font-size: clamp(5.5rem, 8vw, 8.6rem) !important;
+    font-size: clamp(6.3rem, 8vw, 9rem) !important;
+  }
+
+  .hero .cover-text > .studio-line,
+  .hero .cover-text > p.lead {
+    margin-left: 100px;
   }
 }
 
 @media (max-width: 991.98px) {
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero .cover-text {
+    left: 0;
+    right: 0;
+    top: 34%;
+    width: 100%;
+    max-width: none;
+    padding: 0 1.65rem;
+  }
+
   .brand-lockup {
     padding-left: 0;
+    max-width: 100%;
+  }
+
+  .brand-lockup h1 {
+    font-size: clamp(4.5rem, 18vw, 6.7rem) !important;
+    margin-bottom: 0.9rem;
   }
 
   .studio-title-row {
-    gap: 0.7rem;
+    gap: 0.65rem;
   }
 
   .studio-rule {
@@ -351,13 +411,38 @@ a {
 
   .studio-title {
     letter-spacing: 0.26em;
-    font-size: 0.72rem !important;
+    font-size: 0.7rem !important;
+  }
+
+  .hero .cover-text > .studio-line,
+  .hero .cover-text > p.lead {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .hero .studio-line {
+    max-width: 390px;
+    margin-top: 1.4rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  .hero .hero-inquire {
+    font-size: 0.95rem;
+    padding: 0.78rem 1.35rem;
   }
 }
 
 @media (max-width: 576px) {
+  .hero .cover-text {
+    top: 36%;
+    padding: 0 1.5rem;
+  }
+
   .brand-lockup h1 {
-    font-size: clamp(3.7rem, 18vw, 5.3rem) !important;
+    font-size: clamp(4.2rem, 19vw, 5.7rem) !important;
+    line-height: 0.92;
   }
 
   .studio-title-row {
@@ -365,11 +450,22 @@ a {
   }
 
   .studio-rule {
-    width: 18px;
+    width: 22px;
   }
 
   .studio-title {
-    letter-spacing: 0.21em;
-    font-size: 0.66rem !important;
+    letter-spacing: 0.23em;
+    font-size: 0.64rem !important;
+  }
+
+  .hero .studio-line {
+    max-width: 320px;
+    font-size: 0.93rem;
+    line-height: 1.48;
+  }
+
+  .hero .hero-inquire {
+    padding: 0.74rem 1.25rem;
+    font-size: 0.92rem;
   }
 }
