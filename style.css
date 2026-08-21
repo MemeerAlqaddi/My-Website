@@ -457,3 +457,11 @@ a {
     line-height: 1.6;
   }
 }
+
+/* Darker scroll cue */
+.hero-scroll,
+.hero-scroll:hover,
+.hero-scroll:focus {
+  color: #111111 !important;
+  opacity: 1 !important;
+}
