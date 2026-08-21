@@ -469,3 +469,164 @@ a {
     font-size: 0.92rem;
   }
 }
+
+
+/* FINAL HERO ALIGNMENT + CTA OVERRIDES */
+.hero .hero-inquire {
+  background-color: #77736e !important;
+  background-image: none !important;
+  border: 1px solid #77736e !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  padding: 0.82rem 1.55rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0 8px 22px rgba(45, 42, 39, 0.22) !important;
+}
+
+.hero .hero-inquire:hover,
+.hero .hero-inquire:focus,
+.hero .hero-inquire:active {
+  background-color: #65615d !important;
+  border-color: #65615d !important;
+  color: #ffffff !important;
+}
+
+/* Desktop remains editorial and left aligned */
+@media (min-width: 992px) {
+  .hero .cover-text {
+    text-align: left;
+  }
+
+  .hero .studio-line {
+    text-align: left;
+  }
+}
+
+/* Mobile: make the whole hero read as one centered composition */
+@media (max-width: 991.98px) {
+  .hero .cover-text {
+    left: 0 !important;
+    right: 0 !important;
+    top: 35% !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 1.5rem !important;
+    text-align: center !important;
+  }
+
+  .brand-lockup {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .brand-lockup h1 {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .studio-title-row {
+    width: fit-content !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+  }
+
+  .hero .studio-line {
+    max-width: 340px !important;
+    margin: 1.35rem auto 1.3rem !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+    font-size: 0.94rem !important;
+    line-height: 1.5 !important;
+    font-weight: 500 !important;
+  }
+
+  .hero .cover-text > p.lead {
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .hero .hero-inquire {
+    display: inline-block !important;
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .cover-text {
+    top: 36% !important;
+    padding: 0 1.25rem !important;
+  }
+
+  .brand-lockup h1 {
+    font-size: clamp(4rem, 18vw, 5.5rem) !important;
+  }
+
+  .hero .studio-line {
+    max-width: 300px !important;
+    font-size: 0.91rem !important;
+  }
+
+  .hero .hero-inquire {
+    padding: 0.78rem 1.45rem !important;
+    min-width: 152px;
+  }
+}
+
+
+/* FINAL BRAND LOCKUP CENTERING */
+@media (max-width: 991.98px) {
+  .brand-lockup {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+  }
+
+  .brand-lockup h1 {
+    width: auto !important;
+    margin: 0 auto 0.9rem !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .studio-title-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .studio-title {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .hero .cover-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .brand-lockup {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .studio-title-row {
+    justify-content: center;
+    width: 100%;
+  }
+}
