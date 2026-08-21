@@ -465,3 +465,37 @@ a {
   color: #111111 !important;
   opacity: 1 !important;
 }
+
+
+/* Keep the zen fade on the background only, not on foreground controls */
+.hero {
+  -webkit-mask-image: none !important;
+          mask-image: none !important;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(248, 249, 250, 0) 68%,
+    rgba(248, 249, 250, 0.20) 76%,
+    rgba(248, 249, 250, 0.58) 88%,
+    #f8f9fa 100%
+  );
+}
+
+.hero .cover-text {
+  z-index: 4 !important;
+}
+
+.hero-scroll {
+  z-index: 10 !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+  filter: none !important;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.28);
+}
