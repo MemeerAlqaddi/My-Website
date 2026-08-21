@@ -731,3 +731,168 @@ html {
     max-height: 620px;
   }
 }
+
+
+/* ===== FINAL HERO REPAIR ===== */
+.hero {
+  position: relative !important;
+}
+
+.hero .cover-text {
+  position: absolute !important;
+  z-index: 3 !important;
+}
+
+/* Mobile/tablet hero: compact, centered, cohesive */
+@media (max-width: 991.98px) {
+  .hero {
+    min-height: 100svh !important;
+  }
+
+  .hero .cover-text {
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, -50%) !important;
+    width: calc(100% - 2.5rem) !important;
+    max-width: 560px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .brand-lockup {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .brand-lockup h1 {
+    margin: 0 0 0.7rem !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .studio-title-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    gap: 0.55rem !important;
+  }
+
+  .studio-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .studio-rule {
+    width: 24px !important;
+  }
+
+  .hero .cover-text > p.lead {
+    margin: 1.15rem 0 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .hero .hero-inquire {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 168px !important;
+    background: #7d7973 !important;
+    border: 1px solid #7d7973 !important;
+    color: #fff !important;
+    border-radius: 999px !important;
+    padding: 0.78rem 1.45rem !important;
+    box-shadow: 0 8px 22px rgba(42, 39, 36, 0.18) !important;
+  }
+
+  .hero-scroll {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: 2.4rem !important;
+    top: auto !important;
+    transform: translateX(-50%) !important;
+    z-index: 5 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: rgba(62, 59, 56, 0.82) !important;
+    text-decoration: none !important;
+  }
+
+  .hero-scroll-arrow {
+    display: block !important;
+    font-family: Georgia, serif !important;
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .cover-text {
+    width: calc(100% - 2rem) !important;
+    max-width: 430px !important;
+  }
+
+  .brand-lockup h1 {
+    font-size: clamp(4rem, 19vw, 5.5rem) !important;
+  }
+
+  .studio-title {
+    font-size: 0.64rem !important;
+    letter-spacing: 0.23em !important;
+  }
+
+  .studio-rule {
+    width: 20px !important;
+  }
+
+  .hero-scroll {
+    bottom: 1.8rem !important;
+  }
+}
+
+/* Desktop: keep the editorial layout while pinning the scroll cue correctly */
+@media (min-width: 992px) {
+  .hero-scroll {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: 2.8rem !important;
+    top: auto !important;
+    transform: translateX(-50%) !important;
+    z-index: 5 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    color: rgba(62, 59, 56, 0.78) !important;
+    text-decoration: none !important;
+  }
+
+  .hero-scroll-arrow {
+    font-family: Georgia, serif !important;
+    font-size: 1.9rem !important;
+    line-height: 1 !important;
+  }
+}
