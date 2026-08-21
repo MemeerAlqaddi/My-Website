@@ -499,3 +499,111 @@ a {
   filter: none !important;
   text-shadow: 0 1px 1px rgba(255,255,255,0.28);
 }
+
+
+/* Final project-card balancing */
+.work-card {
+  align-items: stretch !important;
+}
+
+.work-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 430px;
+}
+
+.work-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+/* Keep portrait Al Majlis artwork visible without awkward cropping */
+.selected-work .work-card:first-of-type .work-media {
+  padding: 1.5rem;
+}
+
+.selected-work .work-card:first-of-type .work-media img {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  min-height: 430px;
+  max-height: 560px;
+  object-fit: contain;
+}
+
+/* Give ELEVATE's wide board a cleaner presentation */
+.selected-work .work-card:nth-of-type(3) .work-media {
+  padding: 1.25rem;
+  background: #e7e2da;
+}
+
+.selected-work .work-card:nth-of-type(3) .work-media img {
+  object-fit: contain;
+  min-height: 430px;
+  max-height: 560px;
+}
+
+/* Keep project copy blocks visually even */
+.work-copy {
+  min-height: 430px;
+}
+
+.work-copy > p:not(.work-type) {
+  max-width: 42rem;
+  margin-bottom: 0.65rem;
+}
+
+/* Subtle footer positioning statement */
+.footer-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem 1.25rem;
+  padding-top: 1.5rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(56, 53, 50, 0.72);
+}
+
+.footer-services span:not(:last-child)::after {
+  content: "·";
+  margin-left: 1.25rem;
+  color: rgba(56, 53, 50, 0.38);
+}
+
+@media (max-width: 991.98px) {
+  .work-media,
+  .work-copy {
+    min-height: auto;
+  }
+
+  .work-media img,
+  .selected-work .work-card:first-of-type .work-media img,
+  .selected-work .work-card:nth-of-type(3) .work-media img {
+    min-height: 0;
+    max-height: 620px;
+  }
+
+  .selected-work .work-card:first-of-type .work-media,
+  .selected-work .work-card:nth-of-type(3) .work-media {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-services {
+    gap: 0.55rem 0.8rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+  }
+
+  .footer-services span:not(:last-child)::after {
+    margin-left: 0.8rem;
+  }
+}
