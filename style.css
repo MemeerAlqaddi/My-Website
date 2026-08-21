@@ -630,3 +630,104 @@ a {
     width: 100%;
   }
 }
+
+
+/* Smooth in-page navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero scroll cue */
+.hero-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 6.5vh;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  color: #4f4b47;
+  text-decoration: none;
+  opacity: 0.88;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hero-scroll:hover,
+.hero-scroll:focus {
+  color: #3f3b37;
+  opacity: 1;
+  transform: translateX(-50%) translateY(2px);
+}
+
+.hero-scroll-line {
+  width: 1px;
+  height: 28px;
+  background: rgba(79, 75, 71, 0.58);
+}
+
+.hero-scroll-arrow {
+  display: block;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1.45rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+/* With the descriptor removed, keep the CTA visually tied to the lockup. */
+.hero .cover-text > p.lead {
+  margin-top: 1.55rem !important;
+}
+
+/* The exact uploaded Al Majlis artwork is portrait; show it cleanly rather than cropping it. */
+.selected-work .work-card:first-of-type .work-media {
+  background: #efede8;
+  padding: 1.25rem;
+}
+
+.selected-work .work-card:first-of-type .work-media img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-height: 620px;
+  min-height: 420px;
+}
+
+@media (max-width: 991.98px) {
+  .hero-scroll {
+    bottom: 7vh;
+  }
+
+  .hero .cover-text > p.lead {
+    margin-top: 1.45rem !important;
+  }
+
+  .selected-work .work-card:first-of-type .work-media {
+    padding: 1rem;
+  }
+
+  .selected-work .work-card:first-of-type .work-media img {
+    min-height: 520px;
+    max-height: 680px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-scroll {
+    bottom: 6.5vh;
+  }
+
+  .hero-scroll-line {
+    height: 22px;
+  }
+
+  .hero-scroll-arrow {
+    font-size: 1.3rem;
+  }
+
+  .selected-work .work-card:first-of-type .work-media img {
+    min-height: 500px;
+    max-height: 620px;
+  }
+}
